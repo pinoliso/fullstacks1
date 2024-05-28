@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-primario: #333;
     --color-secundario: #2a3b45;
     --color-terciario: #1ea4af;
@@ -203,8 +203,81 @@
     .submenu:has(:checked) img:nth-of-type(2) {
       --rotate: rotate(-180deg);
     }
+  } */
+
+  :root {
+    --color-primario: #333;
+    --color-secundario: #2a3b45;
+    --color-terciario: #1ea4af;
+    --rotate: rotate(0deg);
   }
 
+  header {
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+
+
+  @media screen and (max-width: 992px) {
+    header {
+      padding: 20px 0;
+    }
+    header nav {
+      margin: 0;
+      width: 100%;
+    }
+    .nav-item {
+      padding: 0 20px;
+    }
+    .navbar-nav {
+      padding-top: 10px;
+    }
+  }
+
+  .text-bg-primary {
+    background-color: var(--color-primario) !important;
+  }
+
+  header .bg-body-tertiary {
+    background-color: var(--color-primario) !important;
+  }
+
+  .nav-link img{
+    top: -3px;
+    position: relative;
+    padding-right: 5px;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+  
+
+  nav {
+    background-color: var(--color-primario);
+    max-width: 1322px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .navbar-brand {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .navbar-brand img {
+    position: relative;
+    top: -150px;
+    left: -50px;
+    width: 400px;
+    height: auto;
+  }
 
   h1 {
     max-width: 1200px;
